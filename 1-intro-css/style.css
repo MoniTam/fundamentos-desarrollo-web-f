@@ -1,0 +1,48 @@
+/* Selector Universal */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Selector de elementos*/
+body{ 
+   background-color: lightskyblue;
+}
+h1{ 
+    color: darkolivegreen;
+}
+p{
+    text-decoration: underline;
+}
+a{
+   text-decoration: none;
+   background-color: brown;
+   color: aliceblue;
+
+   display: inline-block;
+   padding: 10px 30px;
+   border-radius: 25px;
+}
+
+/* Selector de Clase*/
+.ball{
+    width: 150px;  /* Ancho */
+    height: 150px;  /* Alto */
+    border-radius: 100%; /* Redondear Esquinas */
+    background-color: chocolate;
+    border: 3px solid black;
+}
+.text-important{
+    font-size: 2rem; 
+    background-color: fuchsia;
+    font-style: oblique;
+    
+}
+
+/* Selector ID*/
+#tituloWeb{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
