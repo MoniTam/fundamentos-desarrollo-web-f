@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: hsl(46.63deg 88.3% 63.14%)
+}
+
+.card{
+    background-color: white;
+    /*margin-top: 100px;*/
+    margin: 100px auto;
+    width: 430px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black; /*distancia en x, distancia en y, difuminación, color de sombra*/
+}
+.card span{
+    display: inline-block;
+    background-color: hsl(46.63deg 88.3% 63.14%) ;
+    padding: 5px 10px;
+    border-radius: 4px ;
+}
+    
+.card small{
+    display: inline-block;
+    margin: 10px 0px;
+    
+}
+    /* https://raw.githubusercontent.com/Em3ka/blog-preview-card/a34f7a6da7d7686a79c0a0e39575e93de24e7ad9/assets/images/illustration-article.svg*/
+.card > img{
+        width: 100px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+}
+    
+.card > p{
+    color:gray;
+    margin-top: 15px;
+    line-height: 23px;
+    }
+    
+.user-info-box{
+    margin-top: 20px;
+}
+    
+.user-info-box img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px ;
+}
+    
+.user-info-box p{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
