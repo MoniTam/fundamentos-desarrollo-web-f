@@ -33,7 +33,7 @@ body{
 }
     /* https://raw.githubusercontent.com/Em3ka/blog-preview-card/a34f7a6da7d7686a79c0a0e39575e93de24e7ad9/assets/images/illustration-article.svg*/
 .card > img{
-        width: 100px;
+        width: 100%;
         border-radius: 15px;
         margin-bottom: 15px;
 }
