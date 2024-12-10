@@ -1,0 +1,49 @@
+/* ESTILOS EXTERNOS */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+color:deeppink;
+text-shadow: 1px 1px 1px darkorchid;
+}
+
+a{
+    text-decoration: none;
+    /*color: inherit;*/
+    color: darkblue;
+    background-color: aquamarine;
+}
+
+.parrafo{
+    text-shadow: none;
+    color:blueviolet;
+}
+
+h1 span{
+background-color: aquamarine;
+text-shadow: none;
+}
+
+a{
+    color: rgb(5, 172, 108);
+    background-color: rgb(180, 238, 157);
+    text-shadow: none;
+}
+
+/* EJEMPLO ESPECIFICIDAD */
+
+/*#red{
+    color: red;
+}*/
+
+.blue {
+    color: rgb(93, 127, 240);
+}
+
+h1{
+    color:darkslateblue /*!important*/; 
+}
