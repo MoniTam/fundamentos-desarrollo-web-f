@@ -21,6 +21,7 @@ header{
 
 nav ul{
     display: flex;
+    gap: 20px;
 }
 
 section{
@@ -34,6 +35,7 @@ section{
     max-width: 1100px;
     /* background-color: aquamarine; */
     margin: auto;
+    color: white;
 }
 
 .card{
@@ -49,16 +51,20 @@ section{
 
 .card-box-50{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color:darkseagreen;
-    width: 46%;
+    width: 46%; 
 }
 
 .card-box-100{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color:dimgrey;
     width: 100%;
 }
@@ -66,10 +72,41 @@ section{
 .middle{
     background-color: rgb(106, 228, 236);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .green{background-color: rgb(61, 236, 236);}
 .lemon-green{background-color: rgb(0, 255, 200);}
 .tomato{background-color: rgb(218, 22, 22);}
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+
+    background-color:rgb(229, 233, 229);
+    line-height: 23px; 
+}
+
+.datos{
+    display: flex;
+    justify-content:flex-end;
+    padding-top: 10px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.datos small{
+    color: blue;
+}
+
+.datos span {
+    color: #888; 
+    font-style: italic;
+}
