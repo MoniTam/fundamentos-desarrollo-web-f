@@ -39,8 +39,8 @@ header{
 /* Sección welcome */
 
 .welcome-content{
-    padding: 50px 0;
-    display:flex ;
+    display: flex;
+    padding: 50px 0; 
 }
 
 .col-1{
@@ -93,4 +93,111 @@ header{
     left: 0;
     bottom: 40px;
     transform: rotate(130deg);
+}
+
+/* seccion productos */
+#productos{
+    background-color: lightgray;
+}
+
+#productos > .container{
+    background-color: rgb(156, 156, 156);
+}
+.productos-content{
+    display: flex; /* Coloca horizontalmente los elementos */
+    gap: 10px; /* Espaciado entre columnas y líneas */
+    padding: 20px;
+}
+/* Instancia Natural de la Tarjeta: Primera isntancia */
+.product-card{
+    flex:1;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;  /*  Muestra solamente el contenido de adentro, en este caso el estilo que se le da a la imagen*/
+} 
+
+/*
+PSeudoclase que selecciona y pinta el primer div de que 
+tiene la clase productos-content
+}
+.productos-content div:nth-last-child(1){
+    background-color: rgb(31, 167, 235);
+}
+    */
+
+    /*
+Selecciona y pinta el segundo div de que tiene la clase 
+productos-content
+.productos-content div:nth-last-child(2){
+    background-color: rgb(152, 234, 20);
+} */
+
+/* Selecciona el tercer div de que tiene la clase productos-content
+ */
+/* .productos-content div:nth-last-child(3){
+    background-color:tomato;
+} */
+ 
+/* Segunda Instancia de la Tarjeta, donde aparece el contenedor cuando el cursor esta dentro  */
+.product-card:hover .card-hover{ /* .card-hover: Llama al contenedor para que aparezca cada vez que el cursor este dentro de la imagen */
+    opacity: 1;
+}
+/* Card hover */
+
+.card-hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Contenedor del encabezado y pie que va sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.51)!important;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+/* card hover header */
+.card-hover-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Centra los elementos del encabezado del contenido de la tarjeta*/
+    padding: 15px;
+}
+/*  Estilos del Enlace*/
+.card-hover-header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Estilos del boton */
+.btn-guardar{
+    background-color: rgb(203, 48, 48);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: none; 
+    cursor: pointer;
+    font-weight: bold;   
+}
+/*  Imagen de la tarjeta*/
+.product-card img{
+    width: 100% ;
+}
+
+/* card hover footer */
+.card-hover-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 10px;
+}
+.card-hover-footer i{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor:pointer;
 }
