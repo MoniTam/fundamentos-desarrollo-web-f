@@ -1,0 +1,48 @@
+/* Estilos Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*  Estilos Desktop */
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-color:darkseagreen;
+    color: white;
+    
+}
+
+.contenedor h1{
+    font-size: 3rem !important;
+}
+
+/* Primer Breakpoint */
+@media screen and (max-width:900px) {
+   .contenedor{
+        background-color: rgb(111, 64, 240);
+   }
+   .contenedor h1{
+    font-size: 5rem !important;
+    text-decoration: line-through;
+   }
+}
+
+/* Primer Breakpoint */
+@media screen and (max-width:468px) {
+    .contenedor{
+        background-color: darkmagenta;
+    } 
+    .contenedor h1{
+        font-size: 2rem !important;
+        text-decoration: underline;
+        background-color: coral;
+        color: blueviolet;
+       }
+}
