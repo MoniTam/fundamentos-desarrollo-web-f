@@ -72,6 +72,7 @@ header{
     position: relative;
     /* background-color:rgb(56, 209, 120) ; */
     flex:1;
+    overflow: hidden;
 }
 
 .img-pizza, .img-hoja, .img-tomato{
@@ -200,4 +201,49 @@ productos-content
     padding: 10px;
     border-radius: 50%;
     cursor:pointer;
+}
+
+/* Primer Breakpoint Tablet*/
+@media screen and (max-width:992px) {
+
+   /*  body{
+        background-color: rgb(170, 113, 7);
+    } */
+    .welcome-content{
+        flex-direction: column-reverse;
+    }
+    .col-1{
+        padding: 17px;
+        margin: auto;
+    }
+    .col-2{
+        /* background-color:darkgoldenrod !important; */
+        flex: none;
+        height: 300px;
+    }
+    .img-pizza, .img-hoja, .img-tomato{
+        width: 230px;
+    }
+    .productos-content{
+        flex-wrap: wrap;
+    }
+
+    .product-card{
+        flex: none;
+        width: 49%;
+    }
+
+}
+
+/* Segundo Breakpoint Mobile*/
+@media screen and (max-width:576px) {
+/*     body{
+        background-color: rgb(151, 153, 7);
+    } */
+    .product-card{
+        flex: none;
+        width: 60%;
+        margin: auto;
+    }
+    .col-1 h3{ font-size: 2.2rem;}
 }
